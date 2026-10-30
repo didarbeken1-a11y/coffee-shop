@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Groundwork — Local Third Wave Coffee Shop</title>
+  <meta name="description" content="Groundwork: small batch third wave coffee. Single-origin beans, menu, addresses and express pre-order for pickup.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-toggle" class="visually-hidden" aria-label="Switch to dark coffee theme">
+  <input type="checkbox" id="nav-toggle" class="visually-hidden" aria-label="Open menu">
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Groundwork home">
+      <svg class="brand__mark" viewBox="0 0 28 19" aria-hidden="true"><ellipse cx="14" cy="9.5" rx="14" ry="9.5" fill="currentColor"/><path d="M8 13 C13 9 15 10 20 5" stroke="var(--bg)" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      <span>GROUNDWORK</span>
+    </a>
+    <label class="burger" for="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="#beans">Beans</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#addresses">Addresses</a></li>
+      </ul>
+      <a class="btn btn--small" href="#menu">Order ahead ↗</a>
+      <label class="theme-btn" for="theme-toggle" aria-label="Toggle light and dark theme">☼</label>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <p class="eyebrow">Small batch · Big character</p>
+        <h1 id="hero-title">Fresh Roast.<br>Honest Taste.</h1>
+        <p class="hero__lead">Thoughtfully sourced beans. Carefully brewed coffee.<br>Your neighborhood ritual starts here.</p>
+        <a class="btn btn--light" href="#beans">Explore menu ↗</a>
+        <p class="hero__note">Est. 2021 · Roasted with care</p>
+      </div>
+      <img class="hero__art" src="hero-cup.svg" alt="A cup of coffee on a saucer" width="380" height="195">
+    </section>
+
+    <section class="section" id="beans" aria-labelledby="beans-title">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--accent">The origin makes the difference</p>
+        <h2 id="beans-title">Meet your new favorite beans.</h2>
+        <p>Single-origin coffees, selected for the stories in every cup.</p>
+      </header>
+      <div class="grid">
+        <article class="card" style="--tone:#c8a17a">
+          <span class="card__swatch" aria-hidden="true"></span>
+          <header class="card__head"><p class="card__origin">Ethiopia</p><h3>Yirgacheffe</h3></header>
+          <p class="card__meta">Altitude · 1,900–2,200m</p>
+          <p class="card__meta">Jasmine · bergamot · peach</p>
+          <a class="card__link" href="#menu">View coffee ↗</a>
+        </article>
+        <article class="card" style="--tone:#8a654b">
+          <span class="card__swatch" aria-hidden="true"></span>
+          <header class="card__head"><p class="card__origin">Colombia</p><h3>Huila Reserve</h3></header>
+          <p class="card__meta">Altitude · 1,600–1,900m</p>
+          <p class="card__meta">Caramel · red apple · cocoa</p>
+          <a class="card__link" href="#menu">View coffee ↗</a>
+        </article>
+        <article class="card" style="--tone:#d8b995">
+          <span class="card__swatch" aria-hidden="true"></span>
+          <header class="card__head"><p class="card__origin">Guatemala</p><h3>Antigua</h3></header>
+          <p class="card__meta">Altitude · 1,500–1,700m</p>
+          <p class="card__meta">Chocolate · orange · almond</p>
+          <a class="card__link" href="#menu">View coffee ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="menu" aria-labelledby="order-title">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--accent">Your coffee, ready when you are</p>
+        <h2 id="order-title">Pre-order for pickup.</h2>
+        <p>Choose your drink and a pickup time. We’ll take care of the rest.</p>
+      </header>
+      <form class="form" action="#" method="post">
+        <label class="field field--item">
+          <span>Choose your coffee</span>
+          <select name="item" required>
+            <option value="" disabled selected>Select a drink</option>
+            <option>Espresso · 2.80</option>
+            <option>Flat white · 3.80</option>
+            <option>Cappuccino · 3.60</option>
+            <option>V60 filter · 4.20</option>
+            <option>Cold brew · 4.00</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Pickup time</span>
+          <input type="time" name="pickup" min="07:00" max="19:00" required>
+        </label>
+        <label class="field">
+          <span>Your name</span>
+          <input type="text" name="name" autocomplete="name" placeholder="Name" minlength="2" required>
+        </label>
+        <label class="field">
+          <span>Phone</span>
+          <input type="tel" name="phone" autocomplete="tel" placeholder="+7 700 000 00 00" pattern="\+?[0-9 ]{10,16}" required>
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+        </label>
+        <div class="form__actions">
+          <button class="btn" type="submit">Place pre-order ↗</button>
+          <p>Pickup only · No payment required now</p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="addresses">
+    <div class="site-footer__main">
+      <section aria-labelledby="f-brand">
+        <h2 id="f-brand">GROUNDWORK</h2>
+        <p>Open daily 07:00–19:00 · Freshly roasted, locally loved</p>
+        <address>Abay Ave 12, Kyzylorda · Beybitshilik St 5, Kyzylorda</address>
+      </section>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="https://instagram.com" rel="noopener">Instagram</a></li>
+          <li><a href="#addresses">Contact</a></li>
+          <li><a href="#top">Privacy</a></li>
+        </ul>
+        <p class="legal">© 2026 Groundwork Coffee</p>
+        <label class="btn btn--ghost btn--small" for="theme-toggle">Switch coffee theme</label>
+      </nav>
+    </div>
+  </footer>
+
+  <nav class="bottom-bar" aria-label="Quick navigation">
+    <a href="#beans">Beans</a>
+    <a href="#menu">Menu</a>
+    <a href="#addresses">Addresses</a>
+  </nav>
+</body>
+</html>
