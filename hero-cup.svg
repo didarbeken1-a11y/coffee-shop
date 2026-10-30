@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 195" role="img" aria-label="Cup of coffee on a saucer with a coffee leaf">
+  <defs>
+    <linearGradient id="cupg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5ebdd"/><stop offset="1" stop-color="#d9c3aa"/></linearGradient>
+  </defs>
+  <ellipse cx="190" cy="176" rx="190" ry="19" fill="#2c1b12"/>
+  <ellipse cx="190" cy="92" rx="132" ry="90" fill="#f0e1cf"/>
+  <path d="M82 64 H298 V150 Q298 187 190 187 Q82 187 82 150 Z" fill="url(#cupg)"/>
+  <path d="M298 90 H340 Q364 90 364 118 Q364 150 332 150 H292" fill="none" stroke="#e8d6bf" stroke-width="16" stroke-linecap="round"/>
+  <ellipse cx="190" cy="64" rx="108" ry="21" fill="#f5ebdd"/>
+  <ellipse cx="190" cy="66" rx="92" ry="14" fill="#583823"/>
+  <path d="M150 48 C140 30 162 22 152 6 M190 46 C180 26 202 20 192 2 M228 48 C218 30 238 24 230 8" fill="none" stroke="#fff2e5" stroke-opacity=".6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M49 150 C49 128 70 118 93 117 C93 140 74 155 49 150 Z" fill="#536348"/>
+  <path d="M52 148 C65 136 76 128 90 120" stroke="#3d4a35" stroke-width="2" fill="none"/>
+</svg>
